@@ -1,0 +1,27 @@
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>s3a://BUCKET</value>
+  </property>
+
+  <property>
+    <name>fs.AbstractFileSystem.s3a.imp</name>
+    <value>org.apache.hadoop.fs.s3a.S3A</value>
+  </property>
+
+  <property>
+    <name>fs.s3a.access.key</name>
+    <value>TODO</value>
+  </property>
+
+  <property>
+    <name>fs.s3a.secret.key</name>
+    <value>TODO</value>
+  </property>
+
+  <property>
+    <name>fs.s3a.buffer.dir</name>
+    <value>/tmp/hadoop</value>
+  </property>
+
+</configuration>
