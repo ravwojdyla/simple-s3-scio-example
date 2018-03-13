@@ -8,7 +8,7 @@ object BrownieRecsJob {
     val (sc, args) = ContextAndArgs(cmdlineArgs)
 
     sc.parallelize(1 to 10)
-      .saveAsTextFile("s3a://catalog-upload-test/ravtest/")
+      .saveAsTextFile("s3a://BUCKET/ravtest/")
 
     sc.close().waitUntilDone()
   }
